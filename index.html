@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="signupForm" action="">
+
+        <div class="input-field">
+            <label for="email">E-mail </label>
+            <input type="email" name="Email" id="email" onChange="validateEmail()">
+            <div id="emailFeedback" class="error"></div>
+        </div>
+
+        <div class="input-field">
+            <label for="password">Password </label>
+            <input type="password" name="Password" id="password" onChange="validatePassword()">
+            <div id="passwordFeedback" class="error"></div>
+        </div>
+
+        <button id="submit" type="button" onclick="handleSubmit()">Submit</button>
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
